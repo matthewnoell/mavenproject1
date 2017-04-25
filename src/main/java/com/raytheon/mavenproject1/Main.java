@@ -49,13 +49,9 @@ public class Main {
         HelpFormatter formatter = new HelpFormatter();
         formatter.printHelp("CLIsample", header, options, footer, true);
         
-        String[] testArgs =
-        { "-r", "opt1", "-S", "opt2", "arg1", "arg2",
-          "arg3", "arg4", "--test", "-A", "opt3", };
-        
         try
         {
-            commandLine = parser.parse(options, testArgs);
+            commandLine = parser.parse(options, args);
 
             if (commandLine.hasOption("A"))
             {
@@ -87,6 +83,9 @@ public class Main {
                 {
                     System.out.print(argument);
                     System.out.print(" ");
+                    
+                    HeadlessSimple headlessSimple = new HeadlessSimple();
+                    headlessSimple.script(argument);
                 }
 
                 System.out.println();
@@ -97,8 +96,5 @@ public class Main {
             System.out.print("Parse error: ");
             System.out.println(exception.getMessage());
         }
-
-        HeadlessSimple headlessSimple = new HeadlessSimple();
-        headlessSimple.script();
     }
 }

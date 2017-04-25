@@ -15,10 +15,17 @@ import org.gephi.project.api.Workspace;
 import org.openide.util.Lookup;
 import org.apache.commons.io.FilenameUtils;
 import com.raytheon.statistics.plugin.LogicDistance;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 public class HeadlessSimple {
+    
+    private static final Logger LOG = Logger.getLogger("com.raytheon.mavenproject1");
 
-    public void script() {
+    public void script(String fileName) {
+        LOG.log(Level.INFO, "HeadlessSimple.script()");
+        LOG.log(Level.INFO, "  fileName = {0}", fileName);
+        
         //Init a project - and therefore a workspace
         ProjectController pc = Lookup.getDefault().lookup(ProjectController.class);
         pc.newProject();
@@ -33,7 +40,8 @@ public class HeadlessSimple {
         //Import file       
         Container container;
         try {
-            File file = new File(getClass().getResource("/com/raytheon/mavenproject1/bbara.gexf").toURI());
+//            File file = new File(getClass().getResource("/com/raytheon/mavenproject1/bbara.gexf").toURI());
+            File file = new File(fileName);
             container = importController.importFile(file);
             container.getLoader().setEdgeDefault(EdgeDirectionDefault.DIRECTED);   //Force DIRECTED
             graphName = FilenameUtils.getBaseName(file.getName());
@@ -58,15 +66,15 @@ public class HeadlessSimple {
         distance.execute(graphModel);
         
         //List node columns
-        GraphModel model = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
-        for (Column col : model.getNodeTable()) {
-            System.out.println(col);
-        }
+//        GraphModel model = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
+//        for (Column col : model.getNodeTable()) {
+//            System.out.println(col);
+//        }
         
         //Iterate values - fastest
-        Column centralityColumn = graphModel.getNodeTable().getColumn(LogicDistance.BETWEENNESS);
-        for (Node n : graphModel.getGraph().getNodes()) {
-            System.out.println(n.getAttribute(centralityColumn));
-        }
+//        Column centralityColumn = graphModel.getNodeTable().getColumn(LogicDistance.BETWEENNESS);
+//        for (Node n : graphModel.getGraph().getNodes()) {
+//            System.out.println(n.getAttribute(centralityColumn));
+//        }
     }
 }
