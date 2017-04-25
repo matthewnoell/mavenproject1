@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2017-04-24">
+    <creator>vl2gexf (rev. 135)</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="cell" type="string"></attribute>
+      <attribute id="1" title="origin_x" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="2" title="origin_y" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="3" title="group" type="string">
+        <default>none</default>
+      </attribute>
+      <attribute id="4" title="subgroup" type="string">
+        <default>none</default>
+      </attribute>
+      <attribute id="5" title="is_sequential" type="boolean">
+        <default>false</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="din_0_" label="din_0_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="din_1_" label="din_1_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="dout_0_" label="dout_0_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="dout_1_" label="dout_1_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="dout_2_" label="dout_2_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="state_reg_1_" label="state_reg_1_">
+        <attvalues>
+          <attvalue for="0" value="dff_q_1x"></attvalue>
+          <attvalue for="5" value="true"></attvalue>
+        </attvalues>
+      </node>
+      <node id="state_reg_2_" label="state_reg_2_">
+        <attvalues>
+          <attvalue for="0" value="dff_q_1x"></attvalue>
+          <attvalue for="5" value="true"></attvalue>
+        </attvalues>
+      </node>
+      <node id="state_reg_0_" label="state_reg_0_">
+        <attvalues>
+          <attvalue for="0" value="dff_q_1x"></attvalue>
+          <attvalue for="5" value="true"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U48" label="U48">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U49" label="U49">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U50" label="U50">
+        <attvalues>
+          <attvalue for="0" value="inv_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U51" label="U51">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U52" label="U52">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U53" label="U53">
+        <attvalues>
+          <attvalue for="0" value="inv_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U54" label="U54">
+        <attvalues>
+          <attvalue for="0" value="nand2_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U55" label="U55">
+        <attvalues>
+          <attvalue for="0" value="and2_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U56" label="U56">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U57" label="U57">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U58" label="U58">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U59" label="U59">
+        <attvalues>
+          <attvalue for="0" value="nor2b0_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U60" label="U60">
+        <attvalues>
+          <attvalue for="0" value="nand2_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U61" label="U61">
+        <attvalues>
+          <attvalue for="0" value="inv_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U62" label="U62">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U63" label="U63">
+        <attvalues>
+          <attvalue for="0" value="oai22b1_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U64" label="U64">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U65" label="U65">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U66" label="U66">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U67" label="U67">
+        <attvalues>
+          <attvalue for="0" value="oai22b1_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U68" label="U68">
+        <attvalues>
+          <attvalue for="0" value="and2_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U69" label="U69">
+        <attvalues>
+          <attvalue for="0" value="oai21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U70" label="U70">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U71" label="U71">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U72" label="U72">
+        <attvalues>
+          <attvalue for="0" value="oai21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U73" label="U73">
+        <attvalues>
+          <attvalue for="0" value="oai21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U74" label="U74">
+        <attvalues>
+          <attvalue for="0" value="aoi22_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U75" label="U75">
+        <attvalues>
+          <attvalue for="0" value="oai21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U76" label="U76">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U77" label="U77">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U78" label="U78">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U79" label="U79">
+        <attvalues>
+          <attvalue for="0" value="aoi21_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U80" label="U80">
+        <attvalues>
+          <attvalue for="0" value="nand2_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U81" label="U81">
+        <attvalues>
+          <attvalue for="0" value="nand3_1x"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U82" label="U82">
+        <attvalues>
+          <attvalue for="0" value="aoi21_b1_1x"></attvalue>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="din_0_" target="U48" label="0" weight="">
+      </edge>
+      <edge id="1" source="din_0_" target="U49" label="1" weight="">
+      </edge>
+      <edge id="2" source="din_0_" target="U53" label="2" weight="">
+      </edge>
+      <edge id="3" source="din_0_" target="U60" label="3" weight="">
+      </edge>
+      <edge id="4" source="din_0_" target="U66" label="4" weight="">
+      </edge>
+      <edge id="5" source="din_0_" target="U67" label="5" weight="">
+      </edge>
+      <edge id="6" source="din_0_" target="U69" label="6" weight="">
+      </edge>
+      <edge id="7" source="din_0_" target="U72" label="7" weight="">
+      </edge>
+      <edge id="8" source="din_0_" target="U73" label="8" weight="">
+      </edge>
+      <edge id="9" source="din_0_" target="U74" label="9" weight="">
+      </edge>
+      <edge id="10" source="din_1_" target="U48" label="10" weight="">
+      </edge>
+      <edge id="11" source="din_1_" target="U49" label="11" weight="">
+      </edge>
+      <edge id="12" source="din_1_" target="U50" label="12" weight="">
+      </edge>
+      <edge id="13" source="din_1_" target="U54" label="13" weight="">
+      </edge>
+      <edge id="14" source="din_1_" target="U55" label="14" weight="">
+      </edge>
+      <edge id="15" source="din_1_" target="U64" label="15" weight="">
+      </edge>
+      <edge id="16" source="din_1_" target="U72" label="16" weight="">
+      </edge>
+      <edge id="17" source="din_1_" target="U74" label="17" weight="">
+      </edge>
+      <edge id="18" source="state_reg_1_" target="U57" label="18" weight="">
+      </edge>
+      <edge id="19" source="state_reg_1_" target="U60" label="19" weight="">
+      </edge>
+      <edge id="20" source="state_reg_1_" target="U64" label="20" weight="">
+      </edge>
+      <edge id="21" source="state_reg_1_" target="U70" label="21" weight="">
+      </edge>
+      <edge id="22" source="state_reg_1_" target="U72" label="22" weight="">
+      </edge>
+      <edge id="23" source="state_reg_1_" target="U77" label="23" weight="">
+      </edge>
+      <edge id="24" source="state_reg_1_" target="U79" label="24" weight="">
+      </edge>
+      <edge id="25" source="state_reg_1_" target="U52" label="25" weight="">
+      </edge>
+      <edge id="26" source="state_reg_1_" target="U66" label="26" weight="">
+      </edge>
+      <edge id="27" source="state_reg_1_" target="U75" label="27" weight="">
+      </edge>
+      <edge id="28" source="state_reg_1_" target="U80" label="28" weight="">
+      </edge>
+      <edge id="29" source="state_reg_1_" target="state_reg_2_" label="29" weight="">
+      </edge>
+      <edge id="30" source="state_reg_1_" target="state_reg_0_" label="30" weight="">
+      </edge>
+      <edge id="31" source="state_reg_2_" target="U49" label="31" weight="">
+      </edge>
+      <edge id="32" source="state_reg_2_" target="U55" label="32" weight="">
+      </edge>
+      <edge id="33" source="state_reg_2_" target="U63" label="33" weight="">
+      </edge>
+      <edge id="34" source="state_reg_2_" target="U68" label="34" weight="">
+      </edge>
+      <edge id="35" source="state_reg_2_" target="U75" label="35" weight="">
+      </edge>
+      <edge id="36" source="state_reg_2_" target="U51" label="36" weight="">
+      </edge>
+      <edge id="37" source="state_reg_2_" target="U65" label="37" weight="">
+      </edge>
+      <edge id="38" source="state_reg_2_" target="U66" label="38" weight="">
+      </edge>
+      <edge id="39" source="state_reg_2_" target="U80" label="39" weight="">
+      </edge>
+      <edge id="40" source="state_reg_0_" target="U48" label="40" weight="">
+      </edge>
+      <edge id="41" source="state_reg_0_" target="U51" label="41" weight="">
+      </edge>
+      <edge id="42" source="state_reg_0_" target="U54" label="42" weight="">
+      </edge>
+      <edge id="43" source="state_reg_0_" target="U62" label="43" weight="">
+      </edge>
+      <edge id="44" source="state_reg_0_" target="U64" label="44" weight="">
+      </edge>
+      <edge id="45" source="state_reg_0_" target="U65" label="45" weight="">
+      </edge>
+      <edge id="46" source="state_reg_0_" target="U68" label="46" weight="">
+      </edge>
+      <edge id="47" source="state_reg_0_" target="U74" label="47" weight="">
+      </edge>
+      <edge id="48" source="state_reg_0_" target="U63" label="48" weight="">
+      </edge>
+      <edge id="49" source="state_reg_0_" target="U67" label="49" weight="">
+      </edge>
+      <edge id="50" source="state_reg_0_" target="U70" label="50" weight="">
+      </edge>
+      <edge id="51" source="state_reg_0_" target="U73" label="51" weight="">
+      </edge>
+      <edge id="52" source="state_reg_0_" target="U81" label="52" weight="">
+      </edge>
+      <edge id="53" source="U48" target="U57" label="53" weight="">
+      </edge>
+      <edge id="54" source="U48" target="U58" label="54" weight="">
+      </edge>
+      <edge id="55" source="U49" target="U52" label="55" weight="">
+      </edge>
+      <edge id="56" source="U50" target="U51" label="56" weight="">
+      </edge>
+      <edge id="57" source="U50" target="U70" label="57" weight="">
+      </edge>
+      <edge id="58" source="U50" target="U74" label="58" weight="">
+      </edge>
+      <edge id="59" source="U50" target="U78" label="59" weight="">
+      </edge>
+      <edge id="60" source="U51" target="U52" label="60" weight="">
+      </edge>
+      <edge id="61" source="U52" target="U58" label="61" weight="">
+      </edge>
+      <edge id="62" source="U53" target="U56" label="62" weight="">
+      </edge>
+      <edge id="63" source="U53" target="U62" label="63" weight="">
+      </edge>
+      <edge id="64" source="U53" target="U77" label="64" weight="">
+      </edge>
+      <edge id="65" source="U53" target="U79" label="65" weight="">
+      </edge>
+      <edge id="66" source="U54" target="U56" label="66" weight="">
+      </edge>
+      <edge id="67" source="U55" target="U56" label="67" weight="">
+      </edge>
+      <edge id="68" source="U55" target="U69" label="68" weight="">
+      </edge>
+      <edge id="69" source="U55" target="U79" label="69" weight="">
+      </edge>
+      <edge id="70" source="U56" target="U57" label="70" weight="">
+      </edge>
+      <edge id="71" source="U57" target="U58" label="71" weight="">
+      </edge>
+      <edge id="72" source="U58" target="U59" label="72" weight="">
+      </edge>
+      <edge id="73" source="U59" target="U76" label="73" weight="">
+      </edge>
+      <edge id="74" source="U59" target="U82" label="74" weight="">
+      </edge>
+      <edge id="75" source="U59" target="state_reg_0_" label="75" weight="">
+      </edge>
+      <edge id="76" source="U60" target="U61" label="76" weight="">
+      </edge>
+      <edge id="77" source="U60" target="U71" label="77" weight="">
+      </edge>
+      <edge id="78" source="U61" target="U62" label="78" weight="">
+      </edge>
+      <edge id="79" source="U61" target="U63" label="79" weight="">
+      </edge>
+      <edge id="80" source="U62" target="U63" label="80" weight="">
+      </edge>
+      <edge id="81" source="U63" target="dout_0_" label="81" weight="">
+      </edge>
+      <edge id="82" source="U64" target="U65" label="82" weight="">
+      </edge>
+      <edge id="83" source="U65" target="U67" label="83" weight="">
+      </edge>
+      <edge id="84" source="U66" target="U67" label="84" weight="">
+      </edge>
+      <edge id="85" source="U66" target="U78" label="85" weight="">
+      </edge>
+      <edge id="86" source="U67" target="dout_1_" label="86" weight="">
+      </edge>
+      <edge id="87" source="U68" target="U69" label="87" weight="">
+      </edge>
+      <edge id="88" source="U68" target="U77" label="88" weight="">
+      </edge>
+      <edge id="89" source="U69" target="U71" label="89" weight="">
+      </edge>
+      <edge id="90" source="U70" target="U71" label="90" weight="">
+      </edge>
+      <edge id="91" source="U71" target="dout_2_" label="91" weight="">
+      </edge>
+      <edge id="92" source="U72" target="U73" label="92" weight="">
+      </edge>
+      <edge id="93" source="U73" target="U76" label="93" weight="">
+      </edge>
+      <edge id="94" source="U74" target="U75" label="94" weight="">
+      </edge>
+      <edge id="95" source="U75" target="U76" label="95" weight="">
+      </edge>
+      <edge id="96" source="U76" target="state_reg_1_" label="96" weight="">
+      </edge>
+      <edge id="97" source="U77" target="U78" label="97" weight="">
+      </edge>
+      <edge id="98" source="U78" target="U82" label="98" weight="">
+      </edge>
+      <edge id="99" source="U79" target="U81" label="99" weight="">
+      </edge>
+      <edge id="100" source="U80" target="U81" label="100" weight="">
+      </edge>
+      <edge id="101" source="U81" target="U82" label="101" weight="">
+      </edge>
+      <edge id="102" source="U82" target="state_reg_2_" label="102" weight="">
+      </edge>
+    </edges>
+  </graph>
+</gexf>

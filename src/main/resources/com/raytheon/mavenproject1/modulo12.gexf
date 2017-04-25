@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2017-04-24">
+    <creator>vl2gexf (rev. 135)</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="directed" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="cell" type="string"></attribute>
+      <attribute id="1" title="origin_x" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="2" title="origin_y" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="3" title="group" type="string">
+        <default>none</default>
+      </attribute>
+      <attribute id="4" title="subgroup" type="string">
+        <default>none</default>
+      </attribute>
+      <attribute id="5" title="is_sequential" type="boolean">
+        <default>false</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="din_0_" label="din_0_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="dout_0_" label="dout_0_">
+        <attvalues>
+          <attvalue for="0" value="port"></attvalue>
+        </attvalues>
+      </node>
+      <node id="U4" label="U4">
+        <attvalues>
+          <attvalue for="0" value="inv_1x"></attvalue>
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="U4" target="dout_0_" label="0" weight="">
+      </edge>
+    </edges>
+  </graph>
+</gexf>
