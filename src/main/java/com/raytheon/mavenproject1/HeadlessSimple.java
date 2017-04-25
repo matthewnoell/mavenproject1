@@ -14,6 +14,7 @@ import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
 import org.gephi.statistics.plugin.GraphDistance;
 import org.openide.util.Lookup;
+import org.apache.commons.io.FilenameUtils;
 
 public class HeadlessSimple {
 
@@ -27,12 +28,15 @@ public class HeadlessSimple {
         GraphModel graphModel = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
         ImportController importController = Lookup.getDefault().lookup(ImportController.class);
 
+        String graphName = "unknown";
+        
         //Import file       
         Container container;
         try {
             File file = new File(getClass().getResource("/com/raytheon/mavenproject1/bbara.gexf").toURI());
             container = importController.importFile(file);
             container.getLoader().setEdgeDefault(EdgeDirectionDefault.DIRECTED);   //Force DIRECTED
+            graphName = FilenameUtils.getBaseName(file.getName());
         } catch (Exception ex) {
             ex.printStackTrace();
             return;
@@ -41,6 +45,8 @@ public class HeadlessSimple {
         //Append imported data to GraphAPI
         importController.process(container, new DefaultProcessor(), workspace);
 
+        System.out.println("Graph: " + graphName);
+        
         //See if graph is well imported
         DirectedGraph graph = graphModel.getDirectedGraph();
         System.out.println("Nodes: " + graph.getNodeCount());
