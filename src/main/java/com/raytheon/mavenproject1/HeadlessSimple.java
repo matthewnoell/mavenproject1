@@ -23,8 +23,8 @@ public class HeadlessSimple {
     private static final Logger LOG = Logger.getLogger("com.raytheon.mavenproject1");
 
     public void script(String fileName) {
-        LOG.log(Level.INFO, "HeadlessSimple.script()");
-        LOG.log(Level.INFO, "  fileName = {0}", fileName);
+//        LOG.log(Level.INFO, "HeadlessSimple.script()");
+//        LOG.log(Level.INFO, "  fileName = {0}", fileName);
         
         //Init a project - and therefore a workspace
         ProjectController pc = Lookup.getDefault().lookup(ProjectController.class);
