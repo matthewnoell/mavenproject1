@@ -40,7 +40,6 @@ public class HeadlessSimple {
         //Import file       
         Container container;
         try {
-//            File file = new File(getClass().getResource("/com/raytheon/mavenproject1/bbara.gexf").toURI());
             File file = new File(fileName);
             container = importController.importFile(file);
             container.getLoader().setEdgeDefault(EdgeDirectionDefault.DIRECTED);   //Force DIRECTED
