@@ -15,6 +15,7 @@ import org.gephi.project.api.Workspace;
 import org.gephi.statistics.plugin.GraphDistance;
 import org.openide.util.Lookup;
 import org.apache.commons.io.FilenameUtils;
+import com.raytheon.statistics.plugin.EdgeMetrics;
 
 public class HeadlessSimple {
 
@@ -53,7 +54,8 @@ public class HeadlessSimple {
         System.out.println("Edges: " + graph.getEdgeCount());
 
         //Get Centrality
-        GraphDistance distance = new GraphDistance();
+//        GraphDistance distance = new GraphDistance();
+        EdgeMetrics distance = new EdgeMetrics();
         distance.setDirected(true);
         distance.execute(graphModel);
         
