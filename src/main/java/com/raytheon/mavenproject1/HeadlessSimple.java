@@ -12,10 +12,9 @@ import org.gephi.io.importer.api.ImportController;
 import org.gephi.io.processor.plugin.DefaultProcessor;
 import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
-import org.gephi.statistics.plugin.GraphDistance;
 import org.openide.util.Lookup;
 import org.apache.commons.io.FilenameUtils;
-import com.raytheon.statistics.plugin.EdgeMetrics;
+import com.raytheon.statistics.plugin.LogicDistance;
 
 public class HeadlessSimple {
 
@@ -54,8 +53,7 @@ public class HeadlessSimple {
         System.out.println("Edges: " + graph.getEdgeCount());
 
         //Get Centrality
-//        GraphDistance distance = new GraphDistance();
-        EdgeMetrics distance = new EdgeMetrics();
+        LogicDistance distance = new LogicDistance();
         distance.setDirected(true);
         distance.execute(graphModel);
         
@@ -66,7 +64,7 @@ public class HeadlessSimple {
         }
         
         //Iterate values - fastest
-        Column centralityColumn = graphModel.getNodeTable().getColumn(GraphDistance.BETWEENNESS);
+        Column centralityColumn = graphModel.getNodeTable().getColumn(LogicDistance.BETWEENNESS);
         for (Node n : graphModel.getGraph().getNodes()) {
             System.out.println(n.getAttribute(centralityColumn));
         }
