@@ -14,7 +14,7 @@ import org.gephi.project.api.ProjectController;
 import org.gephi.project.api.Workspace;
 import org.openide.util.Lookup;
 import org.apache.commons.io.FilenameUtils;
-import com.raytheon.statistics.plugin.LogicDistance;
+import com.raytheon.statistics.plugin.LogicCentrality;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -60,9 +60,11 @@ public class HeadlessSimple {
         System.out.println("Edges: " + graph.getEdgeCount());
 
         //Get Centrality
-        LogicDistance distance = new LogicDistance();
-        distance.setDirected(true);
-        distance.execute(graphModel);
+        LogicCentrality centrality = new LogicCentrality();
+        centrality.setDirected(true);
+        centrality.execute(graphModel);
+        
+        System.out.println("Max Betweenness: " + centrality.getMaxBetweenness());
         
         //List node columns
 //        GraphModel model = Lookup.getDefault().lookup(GraphController.class).getGraphModel();
@@ -71,7 +73,7 @@ public class HeadlessSimple {
 //        }
         
         //Iterate values - fastest
-//        Column centralityColumn = graphModel.getNodeTable().getColumn(LogicDistance.BETWEENNESS);
+//        Column centralityColumn = graphModel.getNodeTable().getColumn(LogicCentrality.BETWEENNESS);
 //        for (Node n : graphModel.getGraph().getNodes()) {
 //            System.out.println(n.getAttribute(centralityColumn));
 //        }
